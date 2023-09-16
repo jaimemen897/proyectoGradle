@@ -13,8 +13,7 @@ public class Proceso {
         this.nombre = nombre;
         this.fecCreacion = System.currentTimeMillis();
         this.fecModificacion = System.currentTimeMillis();
-        /*this.quantum = (int) (Math.random() * 100) + 1;*/
-        this.quantum = 1;
+        this.quantum = (int) (Math.random() * 100) + 1;
         this.prioridad = (int) (Math.random() * 9);
     }
 
@@ -66,11 +65,7 @@ public class Proceso {
         this.prioridad = prioridad;
     }
 
-    /*public String toString() {
-        return "Proceso: " + this.uuid + " " + this.nombre + " " + this.fecCreacion + " " + this.fecModificacion + " " + this.quantum + " " + this.prioridad;
-    }*/
-
     public String toString() {
-        return "Proceso: " + this.nombre + " " + this.prioridad + " Quantum: " + this.quantum + "\n";
+        return "Proceso: " + this.uuid + " " + this.nombre + " " + this.fecCreacion + " " + this.fecModificacion + " " + this.quantum + " " + this.prioridad;
     }
 }
