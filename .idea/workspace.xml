@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81592c5f-b44c-4ff9-a30b-882726538c12" name="Changes" comment="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar">
+    <list default="true" id="81592c5f-b44c-4ff9-a30b-882726538c12" name="Changes" comment="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestColaProcesos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ColaProcesos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ColaProcesos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proceso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jaimemen897"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4caac86f-8e80-40f2-b1fb-803c945e16d6" />
+        <option name="url" value="https://github.com/jaimemen897/proyectoGradle.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -64,13 +79,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -85,32 +100,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProyectoGradle [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestColaProcesos.testAgregar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestColaProcesos.testAgregar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestColaProcesos.testEjecutar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestColaProcesos.testEjecutar&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestColaProcesos.testMinPrioridad" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestColaProcesos.testMinPrioridad&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestColaProcesos.testOrdenar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestColaProcesos.testOrdenar&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProyectoGradle [clean]" />
         <item itemvalue="Application.ColaProcesos" />
+        <item itemvalue="Gradle.TestColaProcesos.testEjecutar" />
+        <item itemvalue="Gradle.TestColaProcesos.testMinPrioridad" />
+        <item itemvalue="Gradle.TestColaProcesos.testOrdenar" />
+        <item itemvalue="Gradle.TestColaProcesos.testAgregar" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +218,7 @@
       <workItem from="1694718149858" duration="31000" />
       <workItem from="1694765089920" duration="7498000" />
       <workItem from="1694799801414" duration="1534000" />
-      <workItem from="1694853770049" duration="9246000" />
+      <workItem from="1694853770049" duration="11648000" />
     </task>
     <task id="LOCAL-00001" summary="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar">
       <option name="closed" value="true" />
@@ -136,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694772022073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad">
+      <option name="closed" value="true" />
+      <created>1694863457127</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694863457127</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar" />
+    <MESSAGE value="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -17,6 +17,7 @@ public class ColaProcesos {
 
     /*Resta 1 al quantum de los procesos si la prioridad es la menor de la lista*/
     void ejecutar() {
+        ordenarPorPrioridad();
         while (!procesos.isEmpty()) {
             /*Se crea una lista auxiliar en la que meter los procesos a eliminar de la lista procesos*/
             List<Proceso> listaAux = new ArrayList<>();
@@ -47,12 +48,11 @@ public class ColaProcesos {
     }
 
     public static void main(String[] args) {
-        ColaProcesos cp = new ColaProcesos();
+        ColaProcesos o = new ColaProcesos();
         for (int i = 0; i < 50; i++) {
             Proceso p = new Proceso("P" + i);
-            cp.agregarProceso(p);
+            o.agregarProceso(p);
         }
-        cp.ordenarPorPrioridad();
-        cp.ejecutar();
+        o.ejecutar();
     }
 }
