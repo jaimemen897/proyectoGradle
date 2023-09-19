@@ -1,28 +1,25 @@
+import lombok.Builder;
+import lombok.Data;
+
+import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Data
+@Builder
 public class Proceso {
-    private UUID uuid;
+    private final UUID uuid = UUID.randomUUID();
     private String nombre;
-    private long fecCreacion;
-    private long fecModificacion;
-    private int quantum;
-    private int prioridad;
+    private final LocalDateTime fecCreacion = LocalDateTime.now();
+    private LocalDateTime fecModificacion = LocalDateTime.now();
+    private int quantum = (int) (Math.random() * 100) + 1;
+    private int prioridad = (int) (Math.random() * 9);
 
     public Proceso(String nombre) {
-        this.uuid = UUID.randomUUID();
         this.nombre = nombre;
-        this.fecCreacion = System.currentTimeMillis();
-        this.fecModificacion = System.currentTimeMillis();
-        this.quantum = (int) (Math.random() * 100) + 1;
-        this.prioridad = (int) (Math.random() * 9);
     }
 
     public UUID getUuid() {
         return uuid;
-    }
-
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
     }
 
     public String getNombre() {
@@ -33,19 +30,15 @@ public class Proceso {
         this.nombre = nombre;
     }
 
-    public long getFecCreacion() {
+    public LocalDateTime getFecCreacion() {
         return fecCreacion;
     }
 
-    public void setFecCreacion(long fecCreacion) {
-        this.fecCreacion = fecCreacion;
-    }
-
-    public long getFecModificacion() {
+    public LocalDateTime getFecModificacion() {
         return fecModificacion;
     }
 
-    public void setFecModificacion(long fecModificacion) {
+    public void setFecModificacion(LocalDateTime fecModificacion) {
         this.fecModificacion = fecModificacion;
     }
 
@@ -65,7 +58,15 @@ public class Proceso {
         this.prioridad = prioridad;
     }
 
+    @Override
     public String toString() {
-        return "Proceso: " + this.uuid + " " + this.nombre + " " + this.fecCreacion + " " + this.fecModificacion + " " + this.quantum + " " + this.prioridad;
+        return "Proceso{" +
+                "uuid=" + uuid +
+                ", nombre='" + nombre + '\'' +
+                ", fecCreacion=" + fecCreacion +
+                ", fecModificacion=" + fecModificacion +
+                ", quantum=" + quantum +
+                ", prioridad=" + prioridad +
+                '}';
     }
 }

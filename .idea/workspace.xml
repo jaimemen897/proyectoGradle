@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81592c5f-b44c-4ff9-a30b-882726538c12" name="Changes" comment="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestColaProcesos.java" afterDir="false" />
+    <list default="true" id="81592c5f-b44c-4ff9-a30b-882726538c12" name="Changes" comment="Version final, tests implementados y funcionales.&#10;Código documentado.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cola.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ColaGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ColaGenericaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ColaProcesos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ColaProcesos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proceso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestColaProcesos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestColaProcesos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +43,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jaimemen897"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jaimemen897&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -73,34 +78,34 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;liberica-17&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.ColaProcesos">
-    <configuration name="ColaProcesos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ColaProcesos" />
-      <module name="ProyectoGradle.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestColaProcesos.testAgregar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ColaGenericaTest.TestForEach">
+    <configuration name="ColaGenericaTest.TestFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TestColaProcesos.testAgregar&quot;" />
+            <option value="&quot;ColaGenericaTest.TestFind&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestColaProcesos.testEjecutar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ColaGenericaTest.TestFindIndex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TestColaProcesos.testEjecutar&quot;" />
+            <option value="&quot;ColaGenericaTest.TestFindIndex&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestColaProcesos.testMinPrioridad" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ColaGenericaTest.TestFindLast" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TestColaProcesos.testMinPrioridad&quot;" />
+            <option value="&quot;ColaGenericaTest.TestFindLast&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,7 +177,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestColaProcesos.testOrdenar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ColaGenericaTest.TestFindLastIndex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,7 +190,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TestColaProcesos.testOrdenar&quot;" />
+            <option value="&quot;ColaGenericaTest.TestFindLastIndex&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ColaGenericaTest.TestForEach" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ColaGenericaTest.TestForEach&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ColaProcesos" />
-        <item itemvalue="Gradle.TestColaProcesos.testEjecutar" />
-        <item itemvalue="Gradle.TestColaProcesos.testMinPrioridad" />
-        <item itemvalue="Gradle.TestColaProcesos.testOrdenar" />
-        <item itemvalue="Gradle.TestColaProcesos.testAgregar" />
+        <item itemvalue="Gradle.ColaGenericaTest.TestForEach" />
+        <item itemvalue="Gradle.ColaGenericaTest.TestFindLastIndex" />
+        <item itemvalue="Gradle.ColaGenericaTest.TestFind" />
+        <item itemvalue="Gradle.ColaGenericaTest.TestFindIndex" />
+        <item itemvalue="Gradle.ColaGenericaTest.TestFindLast" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +247,13 @@
       <workItem from="1694718149858" duration="31000" />
       <workItem from="1694765089920" duration="7498000" />
       <workItem from="1694799801414" duration="1534000" />
-      <workItem from="1694853770049" duration="11648000" />
+      <workItem from="1694853770049" duration="16115000" />
+      <workItem from="1694872751482" duration="523000" />
+      <workItem from="1695053152734" duration="2406000" />
+      <workItem from="1695061955912" duration="1371000" />
+      <workItem from="1695112129197" duration="5373000" />
+      <workItem from="1695123815383" duration="2362000" />
+      <workItem from="1695129635785" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar">
       <option name="closed" value="true" />
@@ -236,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694863457127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version final, tests implementados y funcionales.&#10;Código documentado.">
+      <option name="closed" value="true" />
+      <created>1694866346418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694866346418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +289,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Primera version del ejercicio de cola con prioridades, falta por funcionar el metodo ejecutar" />
     <MESSAGE value="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad" />
-    <option name="LAST_COMMIT_MESSAGE" value="Métodos agregar, ordenar, ejecutar y minPrioridad funcionales.&#10;Ordenar: se ha implementado ordenar por fecha de creacion.&#10;Ejecutar: corrección de bugs&#10;Se ha implementado el método minPrioridad" />
+    <MESSAGE value="Version final, tests implementados y funcionales.&#10;Código documentado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version final, tests implementados y funcionales.&#10;Código documentado." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

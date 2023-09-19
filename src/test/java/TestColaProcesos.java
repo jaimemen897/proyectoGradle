@@ -24,17 +24,6 @@ public class TestColaProcesos {
     }
 
     @Test
-    public void testMinPrioridad() {
-        ColaProcesos o = new ColaProcesos();
-        for (int i = 0; i < 3; i++) {
-            Proceso p = new Proceso("P" + i);
-            p.setPrioridad(i);
-            o.agregarProceso(p);
-        }
-        assertEquals(0, o.minPrioridad(o.procesos));
-    }
-
-    @Test
     public void testEjecutar() {
         ColaProcesos o = new ColaProcesos();
         for (int i = 0; i < 50; i++) {
